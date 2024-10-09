@@ -93,3 +93,41 @@
     dict.keys()  # dict_keys(['Bad', 'Graduation'])
     dict.values()  # dict_values([1987, 2007])
 ```
+
+## Sets
+- A set is an unordered collection of unique elements
+> Sets do not record the elements position
+- Sets are mutable
+
+
+```python
+    Set1 = {"pop","rock","soul","hard rock","rock"}
+    Set1  # {'pop', 'soul', 'hard rock', 'rock'} --> duplicated 'rock' was removed
+
+    album_list = ['michael jackson', 'thriller', 'thriller',1982]
+    album_set = set(album_list)
+    album_set  # {'michael jackson', 'thriller', 1982}    
+```
+- Set Operations
+```python
+    A = {'thriller', 'back in black', 'ac/dc'}
+    A.add('NSYNC')
+    A  # {'thriller', 'back in black', 'ac/dc', 'NSYNC'}
+
+    A.remove('NSYNC')
+    A   # {'thriller', 'back in black', 'ac/dc'}
+
+    'ac/dc' in  A  # True
+    'back in black' in  A  # True
+    'back in black' not in  A  # False 
+
+    album_set_1 = {'ac/dc', 'back in black', 'thriller'}
+    album_set_2 = {'ac/dc', 'back in black', 'The dark side of the moon'}
+    album_set_3 = album_set_1 & album_set_2
+    album_set_3  # {'ac/dc', 'back in black'} --> intersection between 1 and 2
+
+    album_set_1.union(album_set_2)   # {'ac/dc', 'back in black', 'The dark side of the moon', 'thriller'} 
+
+    album_set_3.issubset(album_set1) # True
+    album_set_3.issuperset(album_set2) # False
+```
