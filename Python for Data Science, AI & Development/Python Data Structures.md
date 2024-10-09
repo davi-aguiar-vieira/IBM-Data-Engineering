@@ -69,3 +69,27 @@
     'hard rock',split()
     # ['hard', 'rock']
 ```
+
+## Dictionaries
+-  A dictionary is an unordered collection of key-value pairs
+- The keys have to be immutable and unique
+- The values can be immutable, mutable and duplicates
+```python
+    dict = {'Thriller':  1982, 'Bad': 1987}
+    dict['Thriller']  # 1982
+    dict['Bad']  # 1987 
+    
+    dict['Off the Wall']  # KeyError
+
+    dict['Graduation'] =  2007
+    dict  # {'Thriller': 1982, 'Bad': 1987, 'Graduation': 2007}
+
+    del(dict'Thriller')
+    dict  # {'Bad': 1987, 'Graduation': 2007}
+
+    'Graduation' in  dict  # True
+    'Thriller' in  dict  # False
+
+    dict.keys()  # dict_keys(['Bad', 'Graduation'])
+    dict.values()  # dict_values([1987, 2007])
+```
