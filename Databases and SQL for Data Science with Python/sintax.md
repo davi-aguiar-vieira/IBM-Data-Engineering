@@ -48,3 +48,19 @@ DROP COLUMN column_name;
 ```SQL
 TRUNCATE TABLE table_name;
 ```
+
+
+### - Syntax of **CREATE TABLE** statement
+```SQL
+CREATE TABLE TableName (
+   COLUMN1 datatype,
+   COLUMN2 datatype,
+   COLUMN3 datatype, 
+   ...
+);
+```
+
+### - Syntax of **DROP TABLE** statement
+```SQL
+DROP TABLE TableName;
+```
